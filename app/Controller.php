@@ -2,11 +2,19 @@
 
 namespace App;
 
+use League\Plates\Engine;
+
 class Controller
 {
+    private $view;
+
+    public function __construct()
+    {
+        $this->view = new Engine(__DIR__.'/../Views', 'php');
+    }
+     
     public function render(string $name, array $data = []): void
     {   
-        extract($data);
-        require_once '../Views/'.$name.'.php';
+        echo $this->view->render($name,$data);
     }
 }
