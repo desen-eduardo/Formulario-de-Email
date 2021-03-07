@@ -19,12 +19,12 @@ class Mail
             //$this->mail->SMTPDebug = SMTP::DEBUG_SERVER;               
             $this->mail->isSMTP();   
             $this->mail->CharSet    = 'UTF-8';                                         
-            $this->mail->Host       =  "mail.meusite.com.br";                     
+            $this->mail->Host       = HOST;                     
             $this->mail->SMTPAuth   = true;                                   
-            $this->mail->Username   = "eduardo@meusite.com.br";                    
-            $this->mail->Password   = "123456789";                              
+            $this->mail->Username   = EMAIL;                    
+            $this->mail->Password   = PASSWORD;                              
             $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
-            $this->mail->Port       = 465;                                    
+            $this->mail->Port       = PORT;                                    
         
             //Recipients
             $this->mail->setFrom('from@example.com', 'Mailer');
