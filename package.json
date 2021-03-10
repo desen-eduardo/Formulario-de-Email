@@ -1,0 +1,17 @@
+{
+  "name": "sistema",
+  "version": "1.0.0",
+  "description": "sistema web",
+  "repository": "git@github.com:desen-eduardo/Formulario-de-Email.git",
+  "author": "eduardo",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}

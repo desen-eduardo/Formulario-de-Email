@@ -1,7 +1,15 @@
 <?php
 
-define('EMAIL','');
-define('HOST','');
-define('PASSWORD','');
-define('PORT','');
-define('BASE_URL','http://'.$_SERVER['HTTP_HOST']);
+define('CONFIG',[
+    'EMAIL'=>'',
+    'HOST_EMAIL'=>'',
+    'PASSWORD_EMAIL'=>'',
+    'PORT_EMAIL'=>'',
+    'URL'=>'http://localhost:8000',
+    'DB_CONECT'=>'mysql',
+    'DB_HOST'=>'localhost',
+    'DB_USER'=>'',
+    'DB_PASSWORD'=>'',
+    'CHARSET'=>'UTF-8'
+]);
+

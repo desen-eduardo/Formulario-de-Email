@@ -18,13 +18,13 @@ class Mail
             //Server settings
             //$this->mail->SMTPDebug = SMTP::DEBUG_SERVER;               
             $this->mail->isSMTP();   
-            $this->mail->CharSet    = 'UTF-8';                                         
-            $this->mail->Host       = HOST;                     
+            $this->mail->CharSet    = CONFIG['CHARSET'];                                         
+            $this->mail->Host       = CONFIG['HOST_EMAIL'];                     
             $this->mail->SMTPAuth   = true;                                   
-            $this->mail->Username   = EMAIL;                    
-            $this->mail->Password   = PASSWORD;                              
+            $this->mail->Username   = CONFIG['EMAIL'];                    
+            $this->mail->Password   = CONFIG['PASSWORD_EMAIL'];                              
             $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
-            $this->mail->Port       = PORT;                                    
+            $this->mail->Port       = CONFIG['PORT_EMAIL'];                                    
         
             //Recipients
             $this->mail->setFrom('from@example.com', 'Mailer');

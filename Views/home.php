@@ -54,7 +54,5 @@
 <?php $this->stop() ?>  
 <?php # para criar script para cada página pode ser importado em vez de passa direto na página?>
 <?php $this->push('scripts') ?>
-    <script>
-        alert('oi')
-    </script>
+    <script src="<?= CONFIG['URL']?>/assets/js/script.min.js"></script>
 <?php $this->end() ?>

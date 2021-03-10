@@ -11,7 +11,7 @@ use \PlugRoute\Http\RequestCreator;
 $route = new PlugRoute(new RouteContainer(), RequestCreator::create());
 
 $route->notFound(function() {
-   header('Location:/404');
+   header('Location:'.CONFIG['URL'].'/404');
 });
 
 $route->namespace('\\App\\Controllers', function($route) {
