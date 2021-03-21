@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
             <div class="col-md-12">
-                <p>Hello <?=$this->e($name)?></p>
+                <p>Hello <?=$this->e($name)?> - <a href="<?= CONFIG['URL']?>/logout">Sair</a></p>
                 <h1 class="d-flex justify-content-center mt-5">Formulário de E-mail</h1>
                 <div class="row">
                     <?php if (isset($alert) && !empty($alert)): ?>

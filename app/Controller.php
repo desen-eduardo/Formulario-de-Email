@@ -4,8 +4,10 @@ namespace App;
 
 use League\Plates\Engine;
 
-class Controller
-{
+abstract class Controller
+{   
+    use \App\Auth\Authentication;
+    
     private $view;
 
     public function __construct()

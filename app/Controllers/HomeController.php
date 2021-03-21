@@ -6,11 +6,19 @@ use App\Controller;
 use App\Services\Mail;
 
 class HomeController extends Controller
-{
-    public function index(): void
+{  
+
+    public function __construct()
     {   
-       $data['name'] = "Eduardo";
-       $this->render('home',$data);
+        parent::__construct(); 
+        if (!$this->checkSession()) {
+            $this->redirect('login');exit;
+        }
+    }
+
+    public function index(): void
+    {  
+       $this->render('home');
     }
 
     public function create():array

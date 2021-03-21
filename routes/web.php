@@ -1,9 +1,8 @@
 <?php
 
 /**
- * https://github.com/erandirjunior/plug-route/blob/master/doc/defining-routes.md
+ * github.com/robsonvleite/router
  */
-
 use \PlugRoute\PlugRoute;
 use \PlugRoute\RouteContainer;
 use \PlugRoute\Http\RequestCreator;
@@ -11,16 +10,21 @@ use \PlugRoute\Http\RequestCreator;
 $route = new PlugRoute(new RouteContainer(), RequestCreator::create());
 
 $route->notFound(function() {
-   header('Location:'.CONFIG['URL'].'/404');
+   header('location:'.CONFIG['URL'].'/404');
 });
 
-$route->namespace('\\App\\Controllers', function($route) {
-    $route->get('/', '\\HomeController@index'); 
-    $route->get('/404', '\\NotFoundController@index');
+//tratando get
+$route->namespace('\\App\\Controllers\\', function($route) {
+    $route->get('/', 'HomeController@index'); 
+    $route->get('/login', 'LoginController@index'); 
+    $route->get('/404', 'NotFoundController@index');
+    $route->get('/logout','LoginController@logout');
 });
 
-$route->namespace('\\App\\Controllers', function($route) {
-    $route->post('/', '\\HomeController@create'); 
+//tratando post
+$route->namespace('\\App\\Controllers\\', function($route) {
+    $route->post('/', 'HomeController@create'); 
+    $route->post('/login','LoginController@access');
 });
 
 $route->on();

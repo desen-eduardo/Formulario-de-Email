@@ -10,3 +10,6 @@ Foi acrescentado no sistema template engine plates , fica com o código mais lim
 agora foi colocado no sistema gulp para agilizar css e js, minificando ambos.
 
 o css e js pode se colocado na pasta src e lá possui cada pasta com seu nome especifico, precisa do nodeJS instalado para pode usar o gulp no projeto.
+
+foi acrescentado o banco de dados no projeto mais informação da lib acessa o site.
+https://clancats.io/hydrahon/master/

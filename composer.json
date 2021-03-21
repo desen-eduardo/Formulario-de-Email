@@ -14,8 +14,9 @@
         }
     },
     "require": {
-        "erandir/plug-route": "^4.0",
         "phpmailer/phpmailer": "^6.3",
-        "league/plates": "^3.4"
+        "league/plates": "^3.4",
+        "erandir/plug-route": "^4.0",
+        "clancats/hydrahon": "^1.1"
     }
 }
