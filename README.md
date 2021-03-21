@@ -13,3 +13,5 @@ o css e js pode se colocado na pasta src e lá possui cada pasta com seu nome es
 
 foi acrescentado o banco de dados no projeto mais informação da lib acessa o site.
 https://clancats.io/hydrahon/master/
+
+As tabelas precisa ser no plural exemplo users,usuarios, já entity precisa ser normal User, Usuario o sistema entende que esta fazendo referência a tabela.
